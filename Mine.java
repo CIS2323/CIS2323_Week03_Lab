@@ -15,8 +15,13 @@ public class Mine {
 
 		Lamp yourLamp = new Lamp();
 		Yours.print();
+		yourLamp.setWatts(60);
+		yourLamp.setColor("blue");
+		System.out.println(yourLamp.showStatus());
 		
-		Lamp otherLamp = new Lamp();
-		Others.print();
+		StopWatch s = new StopWatch();
+		s.start();
+		s.stop();
+		System.out.println("Timer ran for " + s.time() + " seconds");
 	}
 }
