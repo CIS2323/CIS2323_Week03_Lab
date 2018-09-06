@@ -3,6 +3,9 @@ import lab2.*;
 
 public class Mine {
 	public static void main(String[] args){
+		StopWatch s = new StopWatch();
+		s.start();
+		
 		Lamp myLamp = new Lamp();
 		System.out.println("This is my lamp!");
 		
@@ -18,9 +21,7 @@ public class Mine {
 		yourLamp.setWatts(60);
 		yourLamp.setColor("blue");
 		System.out.println(yourLamp.showStatus());
-		
-		StopWatch s = new StopWatch();
-		s.start();
+
 		s.stop();
 		System.out.println("Timer ran for " + s.time() + " seconds");
 	}
